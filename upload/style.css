@@ -1,0 +1,7 @@
+* {
+    margin: 4px;
+}
+form {
+    display: inline-block;
+    text-align: right;
+}

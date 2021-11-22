@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: aliceblue;
+
+}
+
+.header {
+    position: relative;
+    height: 8em;
+    background-color: #3aadf0;
+    color: white;
+    text-align: center;
+}
+.header p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.selector-menu {
+    position: relative;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+    background-color: #69c3f7;
+    color: white;
+}
+.selector-menu .selector {
+    border-left: 0.1em solid #3aadf0;
+    border-right: 0.1em solid #3aadf0;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    cursor: pointer;
+    transition: 0.5s;
+}
+.selector-menu .selector:hover {
+    background-color: #3aadf0;
+}
+.selector-menu p {
+    position: relative;
+    font-size: 1em;
+    transform: translateY(25%);
+    height: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.selector-menu .selector .options {
+    background-color: #3aadf0;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    display: none;
+}
+.selector-menu .selector .options div{
+    padding: 0.5em;
+    width: 100%;
+    transition: 0.5s;
+}
+.selector-menu .selector .options div:hover{
+    background-color: #95d6fc;
+}
+
+
+.item {
+    position:static;
+    padding: 5em;
+    padding-bottom: 1em;
+    display: flex;
+}
+
+.item .buttons {
+    margin-right: 5em;
+}
+.item .name {
+    font-size: 1.7rem;
+    font-weight: 650;
+}
+
+.item .buttons .image {
+    position: relative;
+    background-color: white;
+    width: 17em;
+    height: 17em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.item .buttons .purchase-button {
+    position: relative;
+    background-color: #3aadf0;
+    width: 12em;
+    height: 3em;
+    border-radius: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.item .buttons .purchase-button * {
+    position: absolute;
+    font-weight: 700;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.item .buttons .purchase-button p {
+    top: 120%;
+    color: #424242;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.item .buttons .purchase-button div {
+    font-size: 1.1rem;
+    left: 0.7em;
+    transform: translateY(-45%);
+}
+.item .buttons .purchase-button ion-icon {
+    font-size: 1.5rem;
+    right: 0.7em;
+}
+.item .buttons .purchase-button:hover {
+    background-color: #69c3f7;
+}
+
+.item .text p{
+    font-size: 1.1rem;
+    margin-top: 0.5em
+}
+
+.item .values {
+    margin-left: 4em;
+}
+.item .values p {
+    font-size: 1.1rem;
+    margin-top: 0.5em
+}
