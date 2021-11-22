@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: aliceblue;
+
+}
+
+.header {
+    position: relative;
+    height: 8em;
+    background-color: #3aadf0;
+    color: white;
+    text-align: center;
+}
+.header p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.selector-menu {
+    position: relative;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+    background-color: #69c3f7;
+    color: white;
+}
+.selector-menu .selector {
+    border-left: 0.1em solid #3aadf0;
+    border-right: 0.1em solid #3aadf0;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    cursor: pointer;
+    transition: 0.5s;
+}
+.selector-menu .selector:hover {
+    background-color: #3aadf0;
+}
+.selector-menu p {
+    position: relative;
+    font-size: 1em;
+    transform: translateY(25%);
+    height: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.selector-menu .selector .options {
+    background-color: #3aadf0;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    display: none;
+}
+.selector-menu .selector .options div{
+    padding: 0.5em;
+    width: 100%;
+    transition: 0.5s;
+}
+.selector-menu .selector .options div:hover{
+    background-color: #95d6fc;
+}
+
+.store {
+    position: relative;
+    margin-top: 15em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    height: 100vh;
+}
+.store p {
+    position: relative;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 550;
+    color: #424242;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.2em;
+    margin-bottom: 1em;
+}
+.store .selectors {
+    background-color: transparent;
+
+}
+.store .items {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+    padding: 1em;
+    column-gap: 2em;
+    row-gap: 10em;
+}
+a {
+    position: relative;
+    list-style: none;
+    background-color: purple;
+    background-size: cover;
+    background-position: center;
+    width: 12em;
+    height: 12em;
+    border-radius: 0.5em;
+    overflow-wrap: break-word;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+a:hover {
+    filter: brightness(120%);
+}
+a .item-name {
+    position: relative;
+    top: 10.5em;
+    text-decoration: none;
+    text-transform: none;
+}
+a .item-price {
+    position: absolute;
+    font-size: 1.1em;
+    bottom: -0.75rem;
+    right: 0.5rem;
+    text-transform: none;
+}
+
+.imageUrl {
+    display: none;
+}
